@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500&family=Raleway:wght@100&family=Roboto:wght@100;400&display=swap');
+
+:root {
+  --dark-purple: #0A0E31;
+  --lavender: #5D68E2;
+  --gray-purple: #1D2141;
+
+  font-family: 'AR One Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vh;
+
+  color: white;
+}
+
+label, input {
+  margin: 0 !important;
+}
+.txt {
+  font-size: 1.3vh;
+}
+.container {
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  display: flex; justify-content: center; align-items: center;
+
+  background-color: rgb(88, 79, 255);
+
+}
+
+.generator-wrapper {
+  display: flex; flex-direction: column;
+  gap: 3vh;
+  width: 35vh;
+  padding: 3vh;
+  border-radius: 1vh;
+  background-color: var(--dark-purple);
+  box-shadow: -.5vh .5vh 1vh .5vh rgba(29, 33, 65, .7);
+}
+
+.title {
+  font-size: 2.5vh;
+  margin: 0;
+}
+
+.generator-container {
+  display: flex; flex-direction: column;
+  gap: 2vh;
+}
+
+.password-display {
+  background-color: var(--gray-purple);
+  padding: 1.8vh;
+  width: auto !important;
+  font-size: 2vh;
+  border-radius: 1vh;
+  text-align: center;
+
+  user-select: all;
+}
+
+.length-container, .settings-container {
+  display: flex; flex-direction: column; gap: .8vh;
+}
+
+.length-text-container {
+  display: flex; gap:.5vh;
+}
+
+.length-value {
+  font-size: 1.3vh;
+}
+.length-selector {
+  display: flex; gap: 1.7vh; justify-content: center; align-items: center;
+  background-color: var(--gray-purple);
+  border-radius: 1vh;
+  padding: 1.2vh;
+}
+
+.value-label {
+  font-size: 1.8vh;
+}
+#length {
+  width: 100%;
+  accent-color: var(--lavender);
+  cursor:pointer;
+}
+
+.setting {
+  background-color: var(--gray-purple);
+  padding: 1.5vh; border-radius: 1vh;
+
+  display: flex; justify-content: space-between; align-items: center;
+}
+.setting-text {
+  font-size: 1.8vh;
+}
+
+.generate-btn {
+  padding: 1.5vh;
+  border: none; border-radius: 1vh;
+  background: rgb(93,104,226);  
+  cursor: pointer;
+
+  background: linear-gradient(127deg, rgba(93,104,226,1) 0%, rgba(153,104,222,1) 100%);
+  color: white;
+}

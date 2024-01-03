@@ -1,0 +1,33 @@
+@import url('style.css');
+
+#switch {
+  -webkit-appearance: none;
+  position: relative;
+  width: 5vh;
+  height: 3vh;
+  border-radius: 2vh;
+  background-color: var(--dark-purple);
+  transition: .3s;
+
+  cursor: pointer;
+}
+
+#switch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 1.8vh; height: 1.8vh;
+  border-radius: 2vh;
+  background-color: white;
+
+  transition: left .3s;
+}
+
+#switch:checked {
+  background-color: var(--lavender);
+}
+#switch:checked::after {
+  left: 70%;
+}

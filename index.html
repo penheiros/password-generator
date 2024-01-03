@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="input-styling.css">
+  <title>Password Generator</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="generator-wrapper">
+      
+      <label class="title">Password Generator</label>
+
+      <div class="generator-container">
+        <div class="password-display">.....</div>
+
+        <div class="length-container">
+
+          <div class="length-text-container">
+            <label class="txt">LENGTH : </label><label class="length-value">4</label>
+          </div>
+          
+          <div class="length-selector">
+
+            <label class="value-label min">4</label>
+            <input type="range" name="length" id="length" min="4" max="20" value="10">
+            <label class="value-label max">20</label>
+
+          </div>
+
+        </div>
+
+        <div class="settings-container">
+          <label class="txt">SETTINGS</label>
+
+          <div class="uppercase setting"> 
+            <label class="setting-text">Include Uppercase</label>
+            <input type="checkbox" name="uppercase-switch" id="switch">
+          </div>
+
+          <div class="numbers setting"> 
+            <label class="setting-text">Include Numbers</label>
+            <input type="checkbox" name="numbers-switch" id="switch">
+          </div>
+
+          <div class="lowercase setting"> 
+            <label class="setting-text">Include Symbols</label>
+            <input type="checkbox" name="symbols-switch" id="switch">
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <button class="generate-btn">GENERATE PASSWORD</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
